@@ -4,6 +4,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.bundle
 # vim swap files
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
