@@ -41,7 +41,7 @@ twitter_username: wallsec_de
 github_username:  wallsec
 
 # Build settings
-theme: "alembic-jekyll-theme"
+remote_theme: daviddarnes/alembic@main
 plugins:
   - jekyll-feed
   - jekyll-mentions
@@ -51,6 +51,7 @@ plugins:
   - jekyll-commonmark
   - jekyll-include-cache
   - jemoji
+  - jekyll-remote-theme
 
 # PAGINATE:
 paginate: 2 # jekyll-paginate > items per page
