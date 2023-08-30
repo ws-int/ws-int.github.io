@@ -16,6 +16,8 @@ In case you want to update depencencies execute (you should do that before writi
 bundle update
 ```
 
+Afterwards, execute ``bundle exec jekyll serve --livereload``.
+All changes will be reloaded immediately after saving Markdown files in ``_posts`` directory.
 
 ### Name conventions
 

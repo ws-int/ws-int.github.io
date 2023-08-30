@@ -18,7 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: WALLSEC - BLOG
+encoding: utf-8 # Make sure the encoding is right
+lang: en-US # Set the site language
+title: WALLSEC GmbH
 email: contact@wallsec.de
 description: >- # this means to ignore newlines until "baseurl:"
   We are a consulting company based in Walldorf, Germany, helping
@@ -26,13 +28,84 @@ description: >- # this means to ignore newlines until "baseurl:"
   products and SAP Cloud services and strive to provide the best service to our customers.
 baseurl: ""
 url: "ws-int.gihub.io"
+logo: "/assets/logos/wallsec.png" # Site logo, also used in jekyll-seo-tag
+description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+repo: "https://github.com/wallsec/"
+email: "contact@wallsec.de"
+# google_analytics: ""
+# google_analytics_anonymize_ip: ""
+short_name: "WALLSEC GmbH"
+css_inline: false
+
 twitter_username: wallsec_de
 github_username:  wallsec
 
 # Build settings
-theme: minima
+theme: "alembic-jekyll-theme"
 plugins:
   - jekyll-feed
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jemoji
+
+# PAGINATE:
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: /page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: wallsec_de # jekyll-seo-tag > Owners twitter username
+author: wallsec_de # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: WALLSEC GmbH # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/wallsec_de
+    - https://www.linkedin.com/company/wallsec/
+    - https://github.com/wallsec
+
+# JEKYLL SETTINS
+sass:
+  style: compressed
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/Berlin
+
+# NAVIGATION
+navigation_header:
+- title: 🔗HOME
+  url: https://wallsec.de
+- title: /BLOG
+  url: /
+- title: /TAGS
+  url: /tags/
+- title: /SEARCH
+  url: /search/
+navigation_footer:
+- title: Sitemap
+  url: sitemap.xml
+- title: 🔗Impress
+  url: https://www.wallsec.de
+- title: 🔗Privacy Statement
+  url: https://www.wallsec.de/datenschutz
+
+
+
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/wallsec_de
+  LinkedIn: https://www.linkedin.com/company/wallsec
+  GitHub: https://github.com/wallsec
+  facebook: https://www.facebook.com/WALLSECGmbH&sa=D&sntz=1&usg=AOvVaw3mpIh4jSh8fQC3dTSQFjcN
+  email: https://docs.google.com/forms/d/e/1FAIpQLSc-6HPRprxiATpJYwnovIN6dL01tMiFxRK2rFMlNoqs613KOQ/viewform?usp=sf_link
+  RSS: /feed.xml
+
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  Twitter: "#0d94e7"
+  facebook: "#3B5998"
+  Email: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
