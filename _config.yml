@@ -29,7 +29,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "ws-int.gihub.io"
 logo: "/assets/logos/wallsec.png" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
 repo: "https://github.com/wallsec/"
 email: "contact@wallsec.de"
 # google_analytics: ""
